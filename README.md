@@ -8,6 +8,7 @@ A curated list of code from Duke researchers and staff using Duke research compu
 - [Python Samples](#python-samples)
 - [R Samples](#r-samples)
 - [Intern Projects](#intern-projects)
+- [Infrastructure Helpers](#infrastructure-helpers)
 
 ## DCC BASH Scripts
 
@@ -26,3 +27,7 @@ A curated list of code from Duke researchers and staff using Duke research compu
 - [Codep2022Reddit](https://gitlab.oit.duke.edu/rescomp/codep2022Reddit) - Student project developing interactive visualization tools and workflows to visualize sleep patterns using Reddit data. The visualizations were created using Holoviews and Datashader in JupyterLab notebooks that were hosted in OnDemand sessions on the Duke Compute Cluster.
 
 - [CodePlus ML-NLP](https://gitlab.oit.duke.edu/code-plus-ml-nlp/codeplus-final) - Using ML/NLP to Identify Relationships and Similarities in Grant Proposal Texts.
+
+## Infrastructure Helpers
+
+- [slurm-metrics](https://github.com/DukeRC/slurm-metrics) - Pulls in some additional metrics for reporting on Slurm that can be read by Telegraf
