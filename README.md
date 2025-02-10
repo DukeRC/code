@@ -4,12 +4,18 @@ A curated list of code from Duke researchers and staff using Duke research compu
 
 ## Contents
 
+**DCC Samples & Utilities**
 - [DCC Bash Scripts](#dcc-bash-scripts)
 - [Python Samples](#python-samples)
 - [R Samples](#r-samples)
 - [Materials Science Samples](#materials-science)
 - [Intern Projects](#intern-projects)
 - [Infrastructure Helpers](#infrastructure-helpers)
+
+**Globus Samples & Uses**
+
+
+# DCC Samples & Utlities
 
 ## DCC BASH Scripts
 
@@ -32,3 +38,6 @@ A curated list of code from Duke researchers and staff using Duke research compu
 ## Infrastructure Helpers
 
 - [slurm-metrics](https://github.com/DukeRC/slurm-metrics) - Pulls in some additional metrics for reporting on Slurm that can be read by Telegraf
+
+# Globus Samples & Uses
+- [AVstack Core](https://github.com/avstack-lab/lib-avstack-core) and [AVstack API](https://github.com/avstack-lab/lib-avstack-core) - The [AVstack](https://www.avstack.org) writes code for autonomous vehicle design, implementation, test, and analysis. They scripted an installation process of their software that includes an automated data download (see the models directory) from Duke storage shared via Globus. This allowed them to create a data repository large enough to host all of their sample models. 
