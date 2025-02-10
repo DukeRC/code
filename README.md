@@ -1,4 +1,4 @@
-# Awesome Duke Research Computing
+# Duke Research Computing Community Code Repository
 
 A curated list of code from Duke researchers and staff using Duke research computing resources. Community submissions welcome 💙.
 
@@ -7,6 +7,7 @@ A curated list of code from Duke researchers and staff using Duke research compu
 - [DCC Bash Scripts](#dcc-bash-scripts)
 - [Python Samples](#python-samples)
 - [R Samples](#r-samples)
+- [Materials Science Samples](#materials-science)
 - [Intern Projects](#intern-projects)
 - [Infrastructure Helpers](#infrastructure-helpers)
 
@@ -14,9 +15,9 @@ A curated list of code from Duke researchers and staff using Duke research compu
 
 - [DCC Bash Scripts](https://gitlab.oit.duke.edu/rescomp/dcc-bash-scripts) - Handful of useful bash scripts and slurm commands that can come in handy to the users of DCC. Created by RC Intern Shrey Gupta.
 
-## Python Samples
+## Materials Science
+- [Running FHI-aims](https://github.com/uthpalaherath/fhiaims-dcc) - Sample build process and submission script to run the materials simulation software [FHI-Aims](https://fhi-aims.org).
 
-## R Samples
 
 ## Intern Projects
 
