@@ -12,7 +12,8 @@ A curated list of code from Duke researchers and staff using Duke research compu
 - [Intern Projects](#intern-projects)
 - [Infrastructure Helpers](#infrastructure-helpers)
 
-**Globus Samples & Uses**
+**Other cool code**
+[Globus Samples & Uses](#globus-samples-&-uses)
 
 
 # DCC Samples & Utlities
