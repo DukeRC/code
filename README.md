@@ -13,6 +13,8 @@ A curated list of code from Duke researchers and staff using Duke research compu
 **Other cool code**
 - [Globus Samples & Uses](#globus-samples)
 
+**Cool stuff to try on the DCC**
+- [Tutorials and Examples](https://oit-rc.pages.oit.duke.edu/rcsupportdocs/examples)
 
 # DCC Samples & Utlities
 
@@ -22,7 +24,6 @@ A curated list of code from Duke researchers and staff using Duke research compu
 
 ## Materials Science
 - [Running FHI-aims](https://github.com/uthpalaherath/fhiaims-dcc) - Sample build process and submission script to run the materials simulation software [FHI-aims](https://fhi-aims.org).
-
 
 ## Intern Projects
 
@@ -41,3 +42,7 @@ A curated list of code from Duke researchers and staff using Duke research compu
 # Globus Samples
 
 - [AVstack Core](https://github.com/avstack-lab/lib-avstack-core) and [AVstack API](https://github.com/avstack-lab/lib-avstack-core) - The [AVstack](https://www.avstack.org) writes code for autonomous vehicle design, implementation, test, and analysis. They scripted an installation process of their software that includes an automated data download (see the models directory) from Duke storage shared via Globus. This allowed them to create a data repository large enough to host all of their sample models. 
+
+# Tutorials and Examples 
+
+A curated collection of [Tutorials and Examples](https://oit-rc.pages.oit.duke.edu/rcsupportdocs/examples) to try out on the DCC. Community contributions welcome! If you have a tutorial or example you'd like to share with the rest of the community, please reach out to the Research Computing team at <mailto:rescomputing@duke.edu>. 
