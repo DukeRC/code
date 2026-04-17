@@ -14,7 +14,7 @@ A curated list of code from Duke researchers and staff using Duke research compu
 - [Globus Samples & Uses](#globus-samples)
 
 **Cool stuff to try on the DCC**
-- [Tutorials and Examples](https://oit-rc.pages.oit.duke.edu/rcsupportdocs/examples)
+- [Tutorials and Examples](#tutorials-and-examples)
 
 # DCC Samples & Utlities
 
@@ -45,4 +45,4 @@ A curated list of code from Duke researchers and staff using Duke research compu
 
 # Tutorials and Examples 
 
-A curated collection of [Tutorials and Examples](https://oit-rc.pages.oit.duke.edu/rcsupportdocs/examples) to try out on the DCC. Community contributions welcome! If you have a tutorial or example you'd like to share with the rest of the community, please reach out to the Research Computing team at <mailto:rescomputing@duke.edu>. 
+A curated collection of [Tutorials and Examples](https://oit-rc.pages.oit.duke.edu/rcsupportdocs/examples) to try out on the DCC. Community contributions welcome! If you have a tutorial or example you'd like to share with the rest of the community, please reach out to the Research Computing team at [rescomputing@duke.edu](mailto:rescomputing@duke.edu). 
