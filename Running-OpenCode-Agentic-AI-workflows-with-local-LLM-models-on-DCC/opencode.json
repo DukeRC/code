@@ -1,0 +1,28 @@
+{
+    "$schema": "https://opencode.ai/config.json",
+    "default_agent": "plan",
+    "permission": {
+        "edit": "ask"
+    },
+    "provider": {
+        "openai": {
+            "name": "OpenAI via LiteLLM",
+            "options": {
+                "baseURL": "https://litellm.oit.duke.edu/v1",
+                "litellmProxy": true,
+                "apiKey":"{env:LITELLM_TOKEN}"
+            }
+        },
+        "ollama": {
+            "npm": "@ai-sdk/openai-compatible",
+            "name": "Ollama (local)",
+            "options": {
+                "baseURL": "{env:OLLAMA_HOST}/v1"
+            },
+            "models": {
+                "qwen3.6": {},
+                "glm-4.7-flash": {}
+            }
+        }
+    }
+}
