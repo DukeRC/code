@@ -20,6 +20,7 @@ For `EvsV.txt`:
 2. `EvsV.png`
 3. `PvsV.png`
 4. terminal summary (MSE table + best model)
+5. terminal interpretation of results
 
 For `PvsV.dat`:
 
@@ -27,6 +28,7 @@ For `PvsV.dat`:
 2. `PvsV.png`
 3. `EvsV.png` (derived by integrating pressure)
 4. terminal summary (model + MSE)
+5. terminal interpretation of results
 
 ## Dependency and Runtime Rules
 
