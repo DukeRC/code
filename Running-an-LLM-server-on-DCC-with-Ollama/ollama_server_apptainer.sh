@@ -29,4 +29,4 @@ echo "Run the following command on the client shell to connect to the Ollama ser
 echo "export OLLAMA_HOST=http://$(hostname -f):$PORT"
 echo ""
 echo "Run the following command to stop the server:"
-echo "apptainer instance stop ollama-$USER"
+echo "apptainer instance stop ollama-\$USER"
