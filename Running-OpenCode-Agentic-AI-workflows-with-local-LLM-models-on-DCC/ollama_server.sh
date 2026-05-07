@@ -14,8 +14,9 @@ export OLLAMA_MODELS="$MODEL_PATH"
 export OLLAMA_HOST="0.0.0.0:$PORT"
 
 # Start Ollama server in the background
-ollama serve &
+ollama serve > ollama-serve.log 2>&1 &
 
 echo "🦙 Ollama is now serving at http://$(hostname -f):$PORT"
+echo ""
 echo "Run the following command on the client shell to connect to the Ollama server:"
 echo "export OLLAMA_HOST=http://$(hostname -f):$PORT"

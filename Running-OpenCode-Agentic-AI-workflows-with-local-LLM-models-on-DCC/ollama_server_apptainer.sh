@@ -21,8 +21,12 @@ apptainer exec \
   --env OLLAMA_MODELS="$MODEL_PATH" \
   --env OLLAMA_HOST="0.0.0.0:$PORT" \
   instance://$INSTANCE_NAME \
-  ollama serve &
+  ollama serve > ollama-serve.log 2>&1 &
 
 echo "🦙 Ollama is now serving at http://$(hostname -f):$PORT"
+echo ""
 echo "Run the following command on the client shell to connect to the Ollama server:"
 echo "export OLLAMA_HOST=http://$(hostname -f):$PORT"
+echo ""
+echo "Run the following command to stop the server:"
+echo "apptainer instance stop ollama-$USER"
