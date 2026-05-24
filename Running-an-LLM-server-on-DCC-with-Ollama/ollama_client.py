@@ -1,12 +1,12 @@
 #!/usr/bin/env python
 
 from ollama import Client
+import os
 
-HOST = "http://dcc-h200-gpu-06.rc.duke.edu:11434"
 MODEL = "llama4:scout"
 PROMPT = "Write a Python code that calculates the Fibonacci sequence up to 15."
 
-client = Client(host=HOST)
+client = Client(host=os.getenv("OLLAMA_HOST", "http://localhost:11434"))
 
 # Check if model already exists
 resp = client.list()

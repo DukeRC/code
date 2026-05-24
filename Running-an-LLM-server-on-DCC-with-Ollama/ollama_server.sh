@@ -1,14 +1,11 @@
 #!/bin/bash
 
 # Configuration
-MODEL_PATH="/work/${USER}/ollama/models"
+OLLAMA_MODELS="/work/${USER}/ollama/models"
 PORT=11434
 
 # Unset variables to avoid conflicts
 unset ROCR_VISIBLE_DEVICES
-
-# Model path
-export OLLAMA_MODELS="$MODEL_PATH"
 
 # Bind to all interfaces on that node, on port 11434
 export OLLAMA_HOST="0.0.0.0:$PORT"
