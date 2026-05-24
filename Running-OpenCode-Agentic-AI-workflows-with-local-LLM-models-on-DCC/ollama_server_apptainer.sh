@@ -3,7 +3,7 @@
 # Configuration
 CONTAINER_IMAGE="ollama.sif"
 INSTANCE_NAME="ollama-$USER"
-MODEL_PATH="/work/${USER}/ollama/models"
+OLLAMA_MODELS="/work/${USER}/ollama/models"
 PORT=11434
 
 # Unset variables to avoid conflicts
@@ -13,12 +13,12 @@ unset ROCR_VISIBLE_DEVICES
 apptainer instance start \
   --nv \
   --writable-tmpfs \
-  --bind "$MODEL_PATH" \
+  --bind "$OLLAMA_MODELS" \
   "$CONTAINER_IMAGE" "$INSTANCE_NAME"
 
 # Start Ollama serve inside the container in the background
 apptainer exec \
-  --env OLLAMA_MODELS="$MODEL_PATH" \
+  --env OLLAMA_MODELS="$OLLAMA_MODELS" \
   --env OLLAMA_HOST="0.0.0.0:$PORT" \
   instance://$INSTANCE_NAME \
   ollama serve > ollama-serve.log 2>&1 &
