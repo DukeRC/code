@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # A script to query all available models through Duke's AI Gateway.
-# Courtesy of Drew Stinnet:https://ai.colab.duke.edu/colab-ai-blog/all-blogs/getting-started-with-dukes-ai-gateway-a-developers-guide
+# Courtesy of Drew Stinnett:https://ai.colab.duke.edu/colab-ai-blog/all-blogs/getting-started-with-dukes-ai-gateway-a-developers-guide
 #
 # Usage:
 # Get your API token from: https://dashboard.ai.duke.edu/api-keys

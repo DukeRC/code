@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # A Python script using the OpenAI-compatible API on Duke's AI Gateway to generate a response based on an input prompt.
-# Courtesy of Drew Stinnet:https://ai.colab.duke.edu/colab-ai-blog/all-blogs/getting-started-with-dukes-ai-gateway-a-developers-guide
+# Courtesy of Drew Stinnett:https://ai.colab.duke.edu/colab-ai-blog/all-blogs/getting-started-with-dukes-ai-gateway-a-developers-guide
 #
 # Usage:
 # Get your API token from: https://dashboard.ai.duke.edu/api-keys
