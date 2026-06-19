@@ -3,7 +3,7 @@
 from ollama import Client
 import os
 
-MODEL = "llama4:scout"
+MODEL = "qwen3.6:latest"
 PROMPT = "Write a Python code that calculates the Fibonacci sequence up to 15."
 
 client = Client(host=os.getenv("OLLAMA_HOST", "http://localhost:11434"))
