@@ -18,7 +18,7 @@ SERVED_MODEL_NAME="local-vllm"
 API_KEY="your-secret-key"
 
 # Setup Hugging Face parameters
-export HF_HOME="${HF_HOME:-/work/${USER}/huggingface}"
+export HF_HOME="${HF_HOME:-/work/${USER}/.huggingface}"
 if [[ -f ".env" ]]; then
   set -a
   source .env
