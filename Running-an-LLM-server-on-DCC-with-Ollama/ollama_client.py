@@ -4,7 +4,13 @@ from ollama import Client
 import os
 
 MODEL = "qwen3.6:latest"
-PROMPT = "Write a Python code that calculates the Fibonacci sequence up to 15."
+
+# Array of prompts
+PROMPTS = [
+    "Tell me about Sri Lanka",
+    "Why is the sky blue?",
+    "Write a Python code that calculates the Fibonacci sequence up to 15.",
+]
 
 client = Client(host=os.getenv("OLLAMA_HOST", "http://localhost:11434"))
 
@@ -20,11 +26,18 @@ if MODEL not in model_names:
     except Exception as e:
         print(f"Could not pull model: {e}")
 
-# Stream output token by token
-for chunk in client.chat(
-    model=MODEL,
-    messages=[{"role": "user", "content": PROMPT}],
-    stream=True,
-):
-    print(chunk.message.content, end="", flush=True)
-print("\n")
+# Run each prompt in turn, streaming output token by token
+print("-" * 60)
+print(f"Model: {MODEL}")
+for i, prompt in enumerate(PROMPTS, start=1):
+    print("-" * 60)
+    print(f"Prompt {i}/{len(PROMPTS)}: {prompt!r}")
+    print("Output:")
+    for chunk in client.chat(
+        model=MODEL,
+        messages=[{"role": "user", "content": prompt}],
+        stream=True,
+    ):
+        print(chunk.message.content, end="", flush=True)
+    print()
+print("-" * 60)
