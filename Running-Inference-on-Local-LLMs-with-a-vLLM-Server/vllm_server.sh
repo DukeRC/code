@@ -19,6 +19,10 @@ API_KEY="your-secret-key"
 
 # Setup Hugging Face parameters
 export HF_HOME="${HF_HOME:-/work/${USER}/.huggingface}"
+
+# vLLM's JIT caches default to $HOME; keep them off the home quota too
+export FLASHINFER_WORKSPACE_BASE="${FLASHINFER_WORKSPACE_BASE:-/work/${USER}}"
+export VLLM_CACHE_ROOT="${VLLM_CACHE_ROOT:-/work/${USER}/.cache/vllm}"
 if [[ -f ".env" ]]; then
   set -a
   source .env
