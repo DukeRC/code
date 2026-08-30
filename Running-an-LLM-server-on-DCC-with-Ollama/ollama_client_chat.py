@@ -65,6 +65,5 @@ def main():
         # Add assistant reply to history so the model remembers context
         messages.append({"role": "assistant", "content": assistant_text})
 
-
 if __name__ == "__main__":
     main()

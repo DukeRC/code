@@ -6,6 +6,8 @@
 #SBATCH -t 00:10:00
 
 # Start server
+# conda activate is undefined in a batch shell until conda.sh has been sourced
+source "$(conda info --base)/etc/profile.d/conda.sh"
 conda activate ollama-env
 module load ollama/latest
 ollama-serve.sh > server.log
