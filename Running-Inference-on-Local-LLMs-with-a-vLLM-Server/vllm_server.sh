@@ -13,7 +13,7 @@ set -euo pipefail
 
 # Configuration
 PORT=8000
-MODEL_NAME="Qwen/Qwen2-7B"
+MODEL_NAME="Qwen/Qwen2-7B-Instruct"
 SERVED_MODEL_NAME="local-vllm"
 API_KEY="your-secret-key"
 

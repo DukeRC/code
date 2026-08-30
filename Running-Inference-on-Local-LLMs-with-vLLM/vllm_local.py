@@ -16,7 +16,7 @@ os.environ["VLLM_CONFIGURE_LOGGING"] = "0"
 from vllm import LLM, SamplingParams
 
 # Model configuration
-MODEL = "Qwen/Qwen2-7B"
+MODEL = "Qwen/Qwen2-7B-Instruct"
 SAMPLING_PARAMS = SamplingParams(temperature=0.1, top_p=0.95, max_tokens=256)
 
 # Array of prompts
