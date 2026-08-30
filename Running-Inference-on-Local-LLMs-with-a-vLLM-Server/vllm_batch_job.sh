@@ -12,6 +12,9 @@ cd $SLURM_SUBMIT_DIR
 source "$(conda info --base)/etc/profile.d/conda.sh"
 conda activate vllm-env
 
+# Batch jobs do not read ~/.bashrc, so set the cache location here
+export HF_HOME="/work/${USER}/.huggingface"
+
 # Start the server; the script returns once it is ready to accept requests
 ./vllm_server.sh > server.log
 
