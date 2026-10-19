@@ -1,7 +1,6 @@
 #!/bin/bash
 #SBATCH -p scavenger
-#SBATCH -A rescomp
-#SBATCH -t 01:00:00
+#SBATCH -t 00:10:00
 #SBATCH --mem=2G
 #SBATCH -c 1
 #SBATCH -J openai-gateway-csv
